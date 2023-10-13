@@ -41,7 +41,7 @@ class _MyHomePageState extends State<MyHomePage> {
     String videoUrl =
         "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4";
     _videoPlayerController = VideoPlayerController.networkUrl(
-      Uri.parse(videoUrl),
+      Uri.parse(url),
     )..initialize().then((value) => setState(() {}));
 
     _customVideoPlayerController = CustomVideoPlayerController(
